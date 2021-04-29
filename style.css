@@ -5,38 +5,40 @@
 }
 
 body {
-    width: 100%;
-    height: 100vh;
     background-color: rgb(32, 35, 48);
 }
-#logo {
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#logo{
     fill: none;
-    width: 80%;
+    
 }
 #logo {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    animation: fill 0.5s ease forwards 3s !important;
     
+    animation: fill 0.5s ease forwards 3s;
 }
 
 #logo path:nth-child(1){
     stroke-dasharray: 990px;
     stroke-dashoffset: 990px;
-    animation: line-anim 2s ease forwards;
+    animation: line-anim 2s ease infinite;
     
 }
 #logo path:nth-child(2){
     stroke-dasharray: 1032px;
     stroke-dashoffset: 1032px;
-    animation: line-anim 2s ease 1s forwards;
+    animation: line-anim 2s ease 1s infinite;
 }
 #logo path:nth-child(3){
     stroke-dasharray: 810px;
     stroke-dashoffset: 810px;
-    animation: line-anim 2s ease 1.5s forwards;
+    animation: line-anim 2s ease 1.5s infinite;
 }
 
 @keyframes line-anim{
@@ -49,6 +51,6 @@ body {
         fill: transparent;
     }
     to{
-        fill:white;
+        fill:rgb(173, 30, 30);
     }
 }
