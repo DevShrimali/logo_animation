@@ -11,6 +11,7 @@ body {
 }
 #logo {
     fill: none;
+    width: 80%;
 }
 #logo {
     position: absolute;
